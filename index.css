@@ -108,12 +108,12 @@
   width: 100%;
 }
 
-#titre_best {
+.titre {
   display: flex;
   justify-content: center;
 }
 
-#titre_best > h2 {
+.titre > h2 {
   font-size: 24px;
   font-weight: 600;
   font-family: "Sansita Swashed", system-ui;
