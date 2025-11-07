@@ -1,7 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .entete {
   display: flex;
   width: 100%;
   height: 50px;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 #logo {
@@ -96,6 +109,11 @@
 }
 
 #titre_best {
+  display: flex;
+  justify-content: center;
+}
+
+#titre_best > h2 {
   font-size: 24px;
   font-weight: 600;
   font-family: "Sansita Swashed", system-ui;
@@ -104,7 +122,7 @@
 
 .bloc_cake {
   display: flex;
-  background-image: url("asset/Rectangle.png");
+  background-image: url("asset/fond-noir.png");
   background-size: cover;
   background-position: center;
   width: 95%;
@@ -116,7 +134,32 @@
   gap: 25px;
 }
 
-.cake {
+#pain_complet {
+  width: 160px;
+  height: 158px;
+}
+
+#patisserie_feuilletee {
+  width: 160px;
+  height: 145px;
+}
+
+#baguette_campagne {
+  width: 210px;
+  height: 144px;
+}
+
+#miche_blanc {
+  width: 160px;
+  height: 161px;
+}
+
+#gateau_feuilletee {
+  width: 160px;
+  height: 159px;
+}
+
+#miche_complet {
   width: 160px;
   height: 160px;
 }
@@ -144,6 +187,7 @@
   font-size: 16px;
   font-weight: 600;
   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .bouton_info {
@@ -154,6 +198,18 @@
   color: inherit;
   padding: 0;
   cursor: pointer;
+}
+
+.bouton_info > p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  border: solid;
+  border-color: #ffffff;
+  border-radius: 100%;
+  border-width: 1px;
 }
 
 .info {
@@ -175,6 +231,7 @@
   font-size: 16px;
   font-weight: 500;
   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .panier {
@@ -187,6 +244,7 @@
   border-color: #933c24;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .panier:hover {
@@ -198,4 +256,71 @@
   font-size: 16px;
   font-weight: 500;
   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#reduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 379px;
+  background-image: url("asset/fond-blanc.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#reduction > h3 {
+  color: #933c24;
+  width: 374px;
+  height: 45px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+}
+
+#reduction > p {
+  color: #5d5d5d;
+  width: 295px;
+  height: 36px;
+  text-align: center;
+}
+
+#reduction > button {
+  display: flex;
+  width: 177px;
+  height: 58px;
+  background-color: #933c24;
+  border: solid;
+  border-radius: 10px;
+  border-color: #933c24;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#reduction > button:hover {
+  transform: scale(1.05);
+}
+
+#info_reduc {
+  color: #f9f6f1;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#bas_page {
+  margin-top: 30px;
+  width: 100%;
+  height: 1129px;
+  background-image: url("asset/fond-noir.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }

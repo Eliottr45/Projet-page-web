@@ -26,7 +26,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="page">
       <section class="accueil">
         <div class="bloc_accueil">
           <h2 class="elt_accueil">Café Délicieux</h2>
@@ -36,14 +36,16 @@
           <p id="txt_button">Commander</p>
         </button>
       </section>
+      <div id="titre_best">
+        <h2>Nos top Produits</h2>
+      </div>
       <section class="best_seller">
-        <h2 id="titre_best">Nos top Produits</h2>
         <div class="bloc_cake">
           <img
             src="asset/pain-complet.png"
             alt="Photographie d'un pain complet"
             title="Pain complet"
-            class="cake"
+            id="pain_complet"
           />
           <div class="bloc_achat">
             <div class="bloc_prix_info">
@@ -67,7 +69,7 @@
             src="asset/feuillete.png"
             alt="Photographie d'une pâtisserie feuiletée"
             title="Pâtisserie feuilletée"
-            class="cake"
+            id="patisserie_feuilletee"
           />
           <div class="bloc_achat">
             <div class="bloc_prix_info">
@@ -91,7 +93,7 @@
             src="asset/campagne.png"
             alt="Photographie d'une baguette de campagne"
             title="Baguette de campagne"
-            class="cake"
+            id="baguette_campagne"
           />
           <div class="bloc_achat">
             <div class="bloc_prix_info">
@@ -115,7 +117,7 @@
             src="asset/miche.png"
             alt="Photographie d'une miche de pain blanc"
             title="miche de pain blanc"
-            class="cake"
+            id="miche_blanc"
           />
           <div class="bloc_achat">
             <div class="bloc_prix_info">
@@ -139,7 +141,7 @@
             src="asset/gateau-pate-feuillete.png"
             alt="Gâteau pâte feuilletée"
             title="Gâteau pâte feuilletée"
-            class="cake"
+            id="gateau_feuilletee"
           />
           <div class="bloc_achat">
             <div class="bloc_prix_info">
@@ -163,7 +165,7 @@
             src="asset/maiche-pain-complet.png"
             alt="Photographie d'une miche de pain complet"
             title="Miche de pain complet"
-            class="cake"
+            id="miche_complet"
           />
           <div class="bloc_achat">
             <div class="bloc_prix_info">
@@ -183,6 +185,14 @@
           </div>
         </div>
       </section>
+      <section id="reduction">
+        <h3>20% de Réduction sur la première commande</h3>
+        <p>Profitez de cette offre pour découvrir nos plus beaux délices !</p>
+        <button><p id="info_reduc">En savoir plus</p></button>
+      </section>
     </main>
+    <footer id="bas_page">
+      <p>Hello world</p>
+    </footer>
   </body>
 </html>
