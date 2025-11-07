@@ -113,7 +113,7 @@
   justify-content: center;
 }
 
-.titre > h2 {
+.titre_section {
   font-size: 24px;
   font-weight: 600;
   font-family: "Sansita Swashed", system-ui;
