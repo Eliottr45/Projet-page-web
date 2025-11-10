@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -22,7 +22,16 @@
         id="logo"
       />
       <nav>
-        <!--menu burger-->
+        <button id="menu_burger" class="menu_burger">
+          <img src="asset/menu-burger.svg" />
+        </button>
+
+        <ul id="menu" class="menu">
+          <li><a href="#page">Acceuil</a></li>
+          <li><a href="#top_produits">Top Produits</a></li>
+          <li><a href="#decouvrir">Découvrir</a></li>
+          <li><a href="#petits_plaisirs">Petits Plaisirs</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -37,7 +46,7 @@
         </button>
       </section>
       <div class="titre">
-        <h2 class="titre_section">Nos top Produits</h2>
+        <h2 class="titre_section" id="top_produits">Nos top Produits</h2>
       </div>
       <section class="best_seller">
         <div class="bloc_cake">
@@ -191,16 +200,20 @@
         <button><p id="info_reduc">En savoir plus</p></button>
       </section>
       <div class="titre">
-        <h2 class="titre_section">Découvrir</h2>
+        <h2 class="titre_section" id="decouvrir">Découvrir</h2>
       </div>
       <section id="produits">
-        <div><p>gateau</p></div>
+        <div class="gateaux">
+          <p class="underline">Gâteaux</p>
+          <p>Muffins</p>
+          <p>Croissant</p>
+          <p>Pains</p>
+        </div>
         <div class="photo_patisserie">
           <img
             src="asset/muffin.png"
             alt="Photographie d'un muffin"
             title="Muffin"
-            class="photo_produit"
           />
         </div>
         <div class="photo_patisserie">
@@ -208,7 +221,6 @@
             src="asset/cheesecake.png"
             alt="Photographie d'un cheesecake"
             title="Cheesecake"
-            class="photo_produit"
           />
         </div>
         <div class="photo_patisserie">
@@ -216,7 +228,6 @@
             src="asset/crumble.png"
             alt="Photographie d'un crumble"
             title="Crumble"
-            class="photo_produit"
           />
         </div>
         <div class="photo_patisserie">
@@ -224,7 +235,6 @@
             src="asset/gateau-yaourt.png"
             alt="Photographie d'un gâteau au yaourt"
             title="Gâteau au yaourt"
-            class="photo_produit"
           />
         </div>
         <div class="photo_patisserie">
@@ -232,7 +242,6 @@
             src="asset/gateau-chocolat.png"
             alt="Photographie d'un gâteau au chocolat"
             title="Gâteau au chocolat"
-            class="photo_produit"
           />
         </div>
         <div class="photo_patisserie">
@@ -240,11 +249,153 @@
             src="asset/cupcake.png"
             alt="Photographie d'un cupcake"
             title="Cupcake"
-            class="photo_produit"
           />
         </div>
       </section>
+      <section id="info_cafe">
+        <h3>A propos</h3>
+        <p>
+          Un café moderne qui respecte les recettes traditionnelles en vous
+          proposant du “fait maison”.
+        </p>
+        <button><p id="lire_plus">Lire plus</p></button>
+      </section>
+      <div class="titre">
+        <h2 class="titre_section" id="petits_plaisirs">Petits Plaisirs</h2>
+      </div>
+      <section id="plaisirs">
+        <div class="produits_plaisir">
+          <img
+            src="asset/pâte-feuilletée.png"
+            alt="Photographie d'une pâte feuilletée"
+            title="Pâte feuilletée"
+            class="photo_plaisir"
+          />
+          <div class="info_plaisir">
+            <p>Pâte feuilletée</p>
+            <p>8€</p>
+          </div>
+        </div>
+        <div class="produits_plaisir">
+          <img
+            src="asset/donuts.png"
+            alt="Photographie d'un donut"
+            title="Donuts"
+            class="photo_plaisir"
+          />
+          <div class="info_plaisir">
+            <p>Donuts</p>
+            <p>8€</p>
+          </div>
+        </div>
+        <div class="produits_plaisir">
+          <img
+            src="asset/brownies.png"
+            alt="Photographie d'un brownie"
+            title="Brownies"
+            class="photo_plaisir"
+          />
+          <div class="info_plaisir">
+            <p>Brownies</p>
+            <p>8€</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer id="bas_page"></footer>
+    <footer id="bas_page">
+      <section id="reseaux">
+        <img
+          src="asset/logo-keithston.svg"
+          alt="Logo du café Keithston"
+          title="Logo Keithston"
+          id="logo_foot"
+        />
+        <div id="bloc_titre_logo">
+          <p id="bloc_follow">Suivez-nous</p>
+          <div id="bloc_logo">
+            <img
+              src="/asset/facebook.svg"
+              alt="logo Facebook"
+              title="Facebook"
+              class="logo_reseau"
+            />
+            <img
+              src="/asset/pinterest.svg"
+              alt="logo Pinterest"
+              title="Pinterest"
+              class="logo_reseau"
+            />
+            <img
+              src="/asset/whatsapp.svg"
+              alt="logo Whatsapp"
+              title="Whatsapp"
+              class="logo_reseau"
+            />
+            <img
+              src="/asset/instagram.svg"
+              alt="logo Instagram"
+              title="Instagram"
+              class="logo_reseau"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="bloc_coordonnees">
+        <h2 class="titre_foot">A propos</h2>
+        <div class="bloc_info_coor">
+          <p class="coor">02 38 00 00 00</p>
+          <p class="coor">bakery@coda.school</p>
+          <p class="coor">24 Rue Jeanne d’Arc</p>
+          <p class="coor">45000 Orléans</p>
+        </div>
+      </section>
+      <section class="bloc_coordonnees">
+        <h2 class="titre_foot">Explorer</h2>
+        <div class="bloc_info_coor">
+          <p class="coor">Accueil</p>
+          <p class="coor">Blog</p>
+          <p class="coor">Contact</p>
+          <p class="coor">Services</p>
+        </div>
+      </section>
+      <section class="bloc_coordonnees">
+        <h2 class="titre_foot">Actualité</h2>
+        <div class="nouveaute">
+          <div class="bloc_new">
+            <img
+              src="/asset/nouveau-feuilletee.png"
+              alt="Photo du nouveau feuiletée"
+              title="Nouveau feuilletée"
+              class="new_product"
+            />
+            <div class="txt_new">
+              <h3>14 juin 2024</h3>
+              <p>Nouveau délice</p>
+            </div>
+          </div>
+          <div class="bloc_new">
+            <img
+              src="/asset/pain-raisin.png"
+              alt="Photo du nouveau pain au raisin"
+              title="Nouveau pain au raisin"
+              class="new_product"
+            />
+            <div class="txt_new">
+              <h3>14 juin 2024</h3>
+              <p>Pain au raisin</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p id="credit">© 2025 Coda Bakery. Tous droits réservés</p>
+    </footer>
+    <script>
+      const button = document.getElementById("menu_burger");
+      const menu = document.getElementById("menu");
+
+      button.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
