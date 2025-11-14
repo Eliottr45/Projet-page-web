@@ -80,6 +80,7 @@
 .bouton_accueil > span {
   color: #ffffff;
   font-size: 22px;
+  font-weight: 600;
 }
 
 .bouton_accueil > span:hover {
@@ -1383,8 +1384,8 @@ hr {
   }
 
   .logo {
-    height: 80px;
-    width: 99px;
+    height: 99px;
+    width: 87px;
     margin-left: 68px;
     margin-right: 120px;
   }
@@ -1416,7 +1417,7 @@ hr {
     justify-content: space-around;
     width: 500px;
     height: 160px;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 48px;
   }
 
