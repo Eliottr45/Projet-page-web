@@ -77,14 +77,13 @@
   cursor: pointer;
 }
 
-.bouton_accueil > #accueil {
-  color: #e9bd8c;
-  font-size: 22px;
-}
-
 .bouton_accueil > span {
   color: #ffffff;
   font-size: 22px;
+}
+
+.bouton_accueil > span:hover {
+  color: #e9bd8c;
 }
 
 .accueil {
@@ -695,6 +694,7 @@ hr {
     justify-content: flex-start;
     align-items: center;
     gap: 45px;
+    margin-top: 45px;
   }
 
   #bouton_accueil {
@@ -1031,6 +1031,7 @@ hr {
     justify-content: flex-start;
     align-items: center;
     gap: 50px;
+    margin-top: 45px;
   }
 
   #bouton_accueil {
@@ -1394,6 +1395,7 @@ hr {
     justify-content: flex-start;
     align-items: center;
     gap: 50px;
+    margin-top: 45px;
   }
 
   #bouton_accueil {
@@ -1481,6 +1483,26 @@ hr {
     font-size: 64px;
     font-weight: 600;
     font-family: "Sansita Swashed", system-ui;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .titre_section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #c49b6c;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+    border-radius: 3px;
+  }
+
+  .titre_section:hover::after {
+    transform: scaleX(1);
   }
 
   .bloc_cake {
