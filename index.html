@@ -14,29 +14,49 @@
   </head>
 
   <body>
+    <!--header contenant la nav barre qui permet l'affichage du menu burger pour la version téléphone-->
     <header class="entete">
       <img
         src="asset/logo-keithston.svg"
         alt="Logo du café Keithston"
         title="Logo Keithston"
-        id="logo"
+        class="logo"
       />
       <nav>
         <button id="menu_burger" class="menu_burger">
-          <img src="asset/menu-burger.svg" />
+          <img
+            src="asset/menu-burger.svg"
+            alt="bouton ouvrant le menu pour l'accès à différente page"
+          />
         </button>
 
         <ul id="menu" class="menu">
-          <li><a href="#page">Acceuil</a></li>
-          <li><a href="#top_produits">Blog</a></li>
-          <li><a href="#decouvrir">Contact</a></li>
-          <li><a href="#petits_plaisirs">Services</a></li>
+          <li><a href="#">Acceuil</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="page">
+      <!--Bloc d'accueil du site pour la tablette et l'ordinateur le menu burger laisse place a un menu de navigation-->
       <section class="accueil">
+        <nav id="barre_nav">
+          <img
+            src="asset/logo-keithston.svg"
+            alt="Logo du café Keithston"
+            title="Logo Keithston"
+            class="logo"
+          />
+          <div id="bouton_accueil">
+            <button class="bouton_accueil">
+              <span id="accueil">Accueil</span></button
+            ><button class="bouton_accueil"><span>Blog</span></button
+            ><button class="bouton_accueil"><span>Contact</span></button
+            ><button class="bouton_accueil"><span>Services</span></button>
+          </div>
+        </nav>
         <div class="bloc_accueil">
           <h2 class="elt_accueil">Café Délicieux</h2>
           <p class="elt_accueil">Douceur & <br />Saveur</p>
@@ -48,7 +68,8 @@
       <div class="titre">
         <h2 class="titre_section" id="top_produits">Nos top Produits</h2>
       </div>
-      <section class="best_seller">
+      <!--Bloc des top produits qui regroupe les 6 tops produits avec des bouton pour les info et acheter (pour l'instant inactif) et les noms des produits-->
+      <section class="container">
         <div class="bloc_cake">
           <img
             src="asset/pain-complet.png"
@@ -194,6 +215,7 @@
           </div>
         </div>
       </section>
+      <!--Bloc proposant une réduction à l'utilisateur avec un bouton (pour l'innstant inactif) qui doit mener au information des réductions-->
       <section id="reduction">
         <h3>20% de Réduction sur la première commande</h3>
         <p>Profitez de cette offre pour découvrir nos plus beaux délices !</p>
@@ -202,56 +224,67 @@
       <div class="titre">
         <h2 class="titre_section" id="decouvrir">Découvrir</h2>
       </div>
+      <!--Bloc contenants des photos de différents produits mis en avant afin que l'utilisateur découvre ceux-ci-->
       <section id="produits">
         <div class="gateaux">
-          <p class="underline">Gâteaux</p>
-          <p>Muffins</p>
-          <p>Croissant</p>
-          <p>Pains</p>
+          <a href="#" class="underline">Gâteaux</a>
+          <a href="#">Muffins</a>
+          <a href="#">Croissant</a>
+          <a href="#">Pains</a>
+          <a href="#">Tartes</a>
         </div>
-        <div class="photo_patisserie">
-          <img
-            src="asset/muffin.png"
-            alt="Photographie d'un muffin"
-            title="Muffin"
-          />
-        </div>
-        <div class="photo_patisserie">
-          <img
-            src="asset/cheesecake.png"
-            alt="Photographie d'un cheesecake"
-            title="Cheesecake"
-          />
-        </div>
-        <div class="photo_patisserie">
-          <img
-            src="asset/crumble.png"
-            alt="Photographie d'un crumble"
-            title="Crumble"
-          />
-        </div>
-        <div class="photo_patisserie">
-          <img
-            src="asset/gateau-yaourt.png"
-            alt="Photographie d'un gâteau au yaourt"
-            title="Gâteau au yaourt"
-          />
-        </div>
-        <div class="photo_patisserie">
-          <img
-            src="asset/gateau-chocolat.png"
-            alt="Photographie d'un gâteau au chocolat"
-            title="Gâteau au chocolat"
-          />
-        </div>
-        <div class="photo_patisserie">
-          <img
-            src="asset/cupcake.png"
-            alt="Photographie d'un cupcake"
-            title="Cupcake"
-          />
+        <div class="container">
+          <div class="photo_patisserie">
+            <img
+              src="asset/muffin.png"
+              alt="Photographie d'un muffin"
+              title="Muffin"
+              class="taille_decouvrir"
+            />
+          </div>
+          <div class="photo_patisserie">
+            <img
+              src="asset/cheesecake.png"
+              alt="Photographie d'un cheesecake"
+              title="Cheesecake"
+              class="taille_decouvrir"
+            />
+          </div>
+          <div class="photo_patisserie">
+            <img
+              src="asset/crumble.png"
+              alt="Photographie d'un crumble"
+              title="Crumble"
+              class="taille_decouvrir"
+            />
+          </div>
+          <div class="photo_patisserie">
+            <img
+              src="asset/gateau-yaourt.png"
+              alt="Photographie d'un gâteau au yaourt"
+              title="Gâteau au yaourt"
+              class="taille_decouvrir"
+            />
+          </div>
+          <div class="photo_patisserie">
+            <img
+              src="asset/gateau-chocolat.png"
+              alt="Photographie d'un gâteau au chocolat"
+              title="Gâteau au chocolat"
+              class="taille_decouvrir"
+            />
+          </div>
+          <div class="photo_patisserie">
+            <img
+              src="asset/cupcake.png"
+              alt="Photographie d'un cupcake"
+              title="Cupcake"
+              class="taille_decouvrir"
+            />
+          </div>
         </div>
       </section>
+      <!--Bloc qui présente en quelques phrase le café qui est relié au site-->
       <section id="info_cafe">
         <h3>A propos</h3>
         <p>
@@ -263,6 +296,7 @@
       <div class="titre">
         <h2 class="titre_section" id="petits_plaisirs">Petits Plaisirs</h2>
       </div>
+      <!--Bloc mettant en avant des produits avec leur nom et le prix de ceux-ci-->
       <section id="plaisirs">
         <div class="produits_plaisir">
           <img
@@ -302,7 +336,9 @@
         </div>
       </section>
     </main>
+    <!--Bas de page contenant diverse information de contact-->
     <footer id="bas_page">
+      <!--Bloc contenant le logo du café et les différents réseaux sociaux sur lesquelles on peut retrouver le café-->
       <section id="reseaux">
         <img
           src="asset/logo-keithston.svg"
@@ -332,7 +368,7 @@
               class="logo_reseau"
             />
             <img
-              src="/asset/instagram.svg"
+              src="asset/instagram.svg"
               alt="logo Instagram"
               title="Instagram"
               class="logo_reseau"
@@ -340,6 +376,8 @@
           </div>
         </div>
       </section>
+      <hr />
+      <!--Bloc contenant toutes les coordonnées pour joindre ou retrouver le café-->
       <section class="bloc_coordonnees">
         <h2 class="titre_foot">A propos</h2>
         <div class="bloc_info_coor">
@@ -349,6 +387,7 @@
           <p class="coor">45000 Orléans</p>
         </div>
       </section>
+      <!--Bloc contenant les liens menants au différentes pages reliées à la page principal (on peut retrouver ces lien aussi dans le menu burger/nav barre)-->
       <section class="bloc_coordonnees">
         <h2 class="titre_foot">Explorer</h2>
         <div class="bloc_info_coor">
@@ -358,6 +397,7 @@
           <p class="coor">Services</p>
         </div>
       </section>
+      <!--Bloc proposant les nouveautés du café avec leurs date de sortie-->
       <section class="bloc_coordonnees">
         <h2 class="titre_foot">Actualité</h2>
         <div class="nouveaute">
@@ -389,6 +429,7 @@
       </section>
       <p id="credit">© 2025 Coda Bakery. Tous droits réservés</p>
     </footer>
+    <!--programme en javascript servant au bon fonctionnement du menu burger-->
     <script>
       const button = document.getElementById("menu_burger");
       const menu = document.getElementById("menu");
